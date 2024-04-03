@@ -12,7 +12,7 @@ import './BarraNavegacao.css'
 const BarraNavegacao = () => {
 
     const [modalCadastroAberta, setModalCadastroAberta] = useState(false)
-    const [modalLoginAberta, setModalLoginAberta] = useState(false)
+    const [modalLoginAberta, setModalLoginAberta] = useState(false) 
 
     const [categorias, setCategorias] = useState<ICategoria[]>([])
 

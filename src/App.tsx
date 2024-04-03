@@ -3,16 +3,19 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Rotas from './rotas';
+import ABApolloCliente from './componentes/ABApolloCliente';
 
 const queryClient = new QueryClient()
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Rotas />
-      </BrowserRouter>
-    </QueryClientProvider>
+    <ABApolloCliente>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Rotas />
+        </BrowserRouter>
+      </QueryClientProvider>
+    </ABApolloCliente>
   );
 }
 
